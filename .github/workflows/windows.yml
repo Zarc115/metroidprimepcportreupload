@@ -46,7 +46,7 @@ jobs:
         with:
           arch: ${{ matrix.arch }}
 
-      - uses: hendrikmuhs/ccache-action@f09c25b45002a07be2955cbe52e8cee55643f89d # v1.2.24
+      - uses: hendrikmuhs/ccache-action@dbeefd73e8e2ffc1bbc412570072735eb4db3607 # v1.2.25
         with:
           key: ${{ runner.os }}-clangcl${{ matrix.suffix }}
           # Objects this build did not use are dropped before saving.
